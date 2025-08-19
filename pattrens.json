@@ -1,0 +1,15 @@
+{
+  "suspicious_patterns": {
+    "suspicious_links": "http[s]?://[^\\s]+",
+    "urgent_phrases": "(?:urgent|verify your (?:account|identity)|act now|click here|limited time|within 24 hours)",
+    "threatening_language": "(?:account (?:suspended|locked)|unauthorized activity|permanently disabled)",
+    "executable_attachments": "\\.exe|\\.zip|\\.scr"
+  },
+  "scoring_rules": {
+    "suspicious_links": 3,
+    "urgent_phrases": 2,
+    "threatening_language": 3,
+    "executable_attachments": 2,
+    "missing_organization": 2
+  }
+}
